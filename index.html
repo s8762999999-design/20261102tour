@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>臺北情侶一日輕旅行深度規劃儀表板｜2026/11/02 宜蘭往返信義與松菸質感約會指南 (v1.0)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@500;700&display=swap');
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .serif-title {
+      font-family: 'Noto Serif TC', serif;
+    }
+    /* GitHub-style Alert Boxes */
+    .gh-alert {
+      border-left-width: 4px;
+      border-radius: 0.375rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .gh-note {
+      background-color: #eff6ff;
+      border-left-color: #2563eb;
+      color: #1e3a8a;
+    }
+    .gh-warning {
+      background-color: #fffbeb;
+      border-left-color: #d97706;
+      color: #78350f;
+    }
+    .gh-caution {
+      background-color: #fef2f2;
+      border-left-color: #dc2626;
+      color: #7f1d1d;
+    }
+    /* Custom Scrollbar & Transitions */
+    .tab-btn {
+      transition: all 0.2s ease-in-out;
+    }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 19px;
+      width: 2px;
+      background-color: #cbd5e1;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Top Status Bar -->
+  <div class="bg-slate-900 text-slate-200 text-xs py-2 px-4 border-b border-slate-700">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-3">
+        <span class="bg-emerald-700 text-white px-2 py-0.5 rounded font-medium">System v1.0</span>
+        <span>資料查核基準日：2026/10/15 (UTC+8)</span>
+        <span class="hidden sm:inline">|</span>
+        <span class="text-amber-300 font-medium">目標出遊日：2026/11/02 (星期一・11月首個週一)</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>決策原則：舒適度優先於景點數量（單段步行控制在 15 分鐘內）</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Header -->
+  <header class="bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider text-teal-700 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full mb-3">
+            <span>Yilan to Taipei Couple Day Trip Decision Support System</span>
+          </div>
+          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 serif-title tracking-tight">
+            臺北情侶一日輕旅行深度規劃互動儀表板
+          </h1>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base max-w-3xl">
+            2026年11月2日（週一）宜蘭往返信義計畫區、松山文創園區與大巨蛋質感約會指南。整合「首週一公休兩輪排雷」、「2026年7月101入場新制」、「晴雨雙軌動線」與「雙人預算即時試算」。
+          </p>
+        </div>
+
+        <!-- Core KPI Summary Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 shrink-0">
+          <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg">
+            <div class="text-xs text-slate-500">主推路線營業完整度</div>
+            <div class="text-lg font-bold text-emerald-700 mt-0.5">100% 正常營業</div>
+            <div class="text-[11px] text-slate-500">【確鑿】避開首週一休館雷</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg">
+            <div class="text-xs text-slate-500">城際交通最優解</div>
+            <div class="text-lg font-bold text-slate-800 mt-0.5">首都客運 1571</div>
+            <div class="text-[11px] text-slate-500">【確鑿】NT$136/人 直達市府站</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg">
+            <div class="text-xs text-slate-500">舒適入座深聊時數</div>
+            <div class="text-lg font-bold text-teal-700 mt-0.5">大於 6 小時</div>
+            <div class="text-[11px] text-slate-500">【推測】高空咖啡+午茶+午晚餐</div>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg">
+            <div class="text-xs text-slate-500">10/26 搶訂關鍵日</div>
+            <div class="text-lg font-bold text-rose-700 mt-0.5">88F 天空興波</div>
+            <div class="text-[11px] text-slate-500">【確鑿】出發前 7 天開放訂位</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Navigation Tabs -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex space-x-1 overflow-x-auto py-2" id="main-nav">
+        <button onclick="switchSection('sec-routes')" id="tab-sec-routes" class="tab-btn px-4 py-2 rounded-md text-sm font-semibold bg-slate-900 text-white whitespace-nowrap">
+          1. 互動時間軸與三方案切換
+        </button>
+        <button onclick="switchSection('sec-101')" id="tab-sec-101" class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+          2. 臺北101高空決策與新制
+        </button>
+        <button onclick="switchSection('sec-radar')" id="tab-sec-radar" class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+          3. 11/02 首週一公休排雷雷達
+        </button>
+        <button onclick="switchSection('sec-budget')" id="tab-sec-budget" class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+          4. 雙人預算與餐廳動態試算器
+        </button>
+        <button onclick="switchSection('sec-transport')" id="tab-sec-transport" class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 whitespace-nowrap">
+          5. 交通時刻表與導航中心
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+    <!-- ==================== SECTION 1: ROUTES & TIMELINE ==================== -->
+    <section id="sec-routes" class="space-y-8">
+      <!-- GitHub Alert Banner -->
+      <div class="gh-alert gh-note">
+        <div class="font-bold text-sm mb-1">[!NOTE] 最佳路線決策總結（Verified Recommendation）</div>
+        <p class="text-xs sm:text-sm leading-relaxed">
+          【確鑿】經過兩輪場館營運與交通動線核對，強烈推薦執行<strong>「方案 B：文青質感約會路線（臺北101高空漫步 × 松山文創園區 × 臺北大巨蛋 Garden City 微醺夜）」</strong>。此方案完美避開 2026/11/02「11月第一個星期一」四四南村室內館與好丘信義店之公休陷阱，將雲端視野、日治古蹟菸廠、24小時書店與新世代巨蛋商圈濃縮於 1.5 公里順時針小環狀動線內，去回程均於「市府轉運站」搭乘首都客運 1571 三排座直達車，不走回頭路。
+        </p>
+      </div>
+
+      <!-- Control Panel: Route Selector + Weather Toggle + Pacing Toggles -->
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-5 space-y-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">步驟一：選擇行程方案與天候模式 (Route & Weather Controller)</h2>
+            <p class="text-xs text-slate-500 mt-0.5">點擊下方按鈕可即時切換三種路線方案，或啟動「東北季風雨天 100% 室內立體連通備案」</p>
+          </div>
+          <!-- Weather Mode Switch -->
+          <div class="inline-flex rounded-lg border border-slate-300 p-1 bg-slate-100 self-start">
+            <button id="btn-weather-sunny" onclick="setWeatherMode('sunny')" class="px-3 py-1.5 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-xs">
+              晴天／陰天標準動線
+            </button>
+            <button id="btn-weather-rainy" onclick="setWeatherMode('rainy')" class="px-3 py-1.5 rounded-md text-xs font-medium text-slate-600 hover:text-slate-900">
+              雨天 100% 室內免撐傘備案
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 Route Cards Selector -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="route-selector-cards">
+          <!-- Route B (Default Active) -->
+          <div onclick="selectRoute('B')" id="card-route-B" class="cursor-pointer border-2 border-teal-600 bg-teal-50/40 rounded-lg p-4 transition">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-bold bg-teal-700 text-white px-2 py-0.5 rounded">方案 B（最推薦首選）</span>
+              <span class="text-xs font-semibold text-emerald-700">【確鑿】週一 100% 營業</span>
+            </div>
+            <h3 class="font-bold text-slate-900 mt-2">文青質感約會路線</h3>
+            <p class="text-xs text-slate-600 mt-1">101 88F天空興波＋4F午餐 ➔ 四四南村草坡 ➔ 松菸古蹟＆誠品24H書店午茶 ➔ 大巨蛋/聚聚樓晚餐</p>
+            <div class="mt-3 pt-2 border-t border-teal-200/60 flex justify-between text-[11px] text-slate-600">
+              <span>【推測】步行約 2.6 km (35-45分)</span>
+              <span>預算約 NT$3,860–9,800</span>
+            </div>
+          </div>
+
+          <!-- Route A -->
+          <div onclick="selectRoute('A')" id="card-route-A" class="cursor-pointer border border-slate-200 hover:border-slate-300 bg-white rounded-lg p-4 transition">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-semibold bg-slate-200 text-slate-800 px-2 py-0.5 rounded">方案 A</span>
+              <span class="text-xs font-semibold text-amber-700">【確鑿】四四南村室內全休</span>
+            </div>
+            <h3 class="font-bold text-slate-900 mt-2">信義區輕鬆浪漫路線</h3>
+            <p class="text-xs text-slate-600 mt-1">101高空＆午餐 ➔ 四四南村戶外草坡 ➔ 信義空橋＆BELLAVITA小狐狸咖啡 ➔ 微風南山/信義安和晚餐</p>
+            <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-[11px] text-slate-600">
+              <span>【推測】步行約 2.2 km (30-35分)</span>
+              <span>預算約 NT$3,980–10,500</span>
+            </div>
+          </div>
+
+          <!-- Route C -->
+          <div onclick="selectRoute('C')" id="card-route-C" class="cursor-pointer border border-slate-200 hover:border-slate-300 bg-white rounded-lg p-4 transition">
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-semibold bg-slate-200 text-slate-800 px-2 py-0.5 rounded">方案 C</span>
+              <span class="text-xs font-semibold text-teal-700">【確鑿】西進東出臺鐵返宜</span>
+            </div>
+            <h3 class="font-bold text-slate-900 mt-2">城市探索與夜間約會路線</h3>
+            <p class="text-xs text-slate-600 mt-1">101高空體驗 ➔ 捷運東門站永康街文青咖啡＆白水豆花 ➔ 捷運松山站饒河夜市必比登 ➔ 松山站火車返宜</p>
+            <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between text-[11px] text-slate-600">
+              <span>【推測】步行約 4.2 km (60-75分)</span>
+              <span>預算約 NT$3,520–5,800</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elastic Pacing Toggles (Only relevant for Sunny Route B) -->
+        <div id="elastic-controls" class="bg-slate-50 border border-slate-200 rounded-lg p-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="text-xs font-semibold text-slate-700">
+            方案 B 當日體力與胃口彈性刪減機制（勾選後時間軸將即時更新）：
+          </div>
+          <div class="flex flex-wrap gap-4 text-xs">
+            <label class="inline-flex items-center space-x-2 cursor-pointer">
+              <input type="checkbox" id="chk-skip-44" onchange="renderTimeline()" class="rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+              <span>刪減 13:20 四四南村戶外草坡（由101直接搭車赴松菸，避開正午日曬）</span>
+            </label>
+            <label class="inline-flex items-center space-x-2 cursor-pointer">
+              <input type="checkbox" id="chk-light-tea" onchange="renderTimeline()" class="rounded border-slate-300 text-teal-600 focus:ring-teal-500" />
+              <span>上午 88F 已吃飽，午後松菸刪減正式下午茶（改逛誠品 24H 書店／單點飲品）</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Timeline Output & Pre-trip Checklist Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Left 2 Columns: Timeline -->
+        <div class="lg:col-span-2 bg-white border border-slate-200 rounded-xl shadow-xs p-5">
+          <div class="flex flex-wrap justify-between items-center gap-2 mb-6 pb-3 border-b border-slate-100">
+            <div>
+              <h3 id="timeline-title" class="text-lg font-bold text-slate-900">方案 B：文青質感約會路線（完整時間表）</h3>
+              <p id="timeline-subtitle" class="text-xs text-slate-500 mt-0.5">2026/11/02 (週一) 常態班次規劃｜出發前一日請以公路客運即時動態系統做最終確認</p>
+            </div>
+            <div id="timeline-stats" class="text-xs font-medium bg-slate-100 text-slate-800 px-3 py-1.5 rounded-md">
+              預估步行：約 2.6 km (35–45 分鐘)
+            </div>
+          </div>
+
+          <div id="timeline-container" class="relative timeline-line space-y-6 pl-2">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Right 1 Column: Pre-trip Booking Calendar & Checklist + Route Comparison Table -->
+        <div class="space-y-6">
+          <!-- Pre-trip Action Checklist -->
+          <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-5">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-base font-bold text-slate-900">行前關鍵預約檢核表</h3>
+              <span class="text-[11px] bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">自動記憶勾選</span>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">
+              【確鑿】依據各餐廳官方訂位規則，請掌握以下兩個關鍵預約時點：
+            </p>
+            <div class="space-y-3 text-xs" id="booking-checklist">
+              <label class="flex items-start space-x-2.5 p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                <input type="checkbox" data-check-id="chk-1" class="mt-0.5 rounded text-teal-600" onchange="saveChecklist()" />
+                <div>
+                  <div class="font-semibold text-slate-900">【即日起 2026/10/15】預訂 101 4F SALT & STONE 午餐</div>
+                  <div class="text-slate-500 mt-0.5">開放 1 個月內於 inline 訂位（預訂 11/02 11:45，保留 10 分鐘，低消 NT$600+10%/人）[22]。</div>
+                </div>
+              </label>
+
+              <label class="flex items-start space-x-2.5 p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                <input type="checkbox" data-check-id="chk-2" class="mt-0.5 rounded text-teal-600" onchange="saveChecklist()" />
+                <div>
+                  <div class="font-semibold text-slate-900">【即日起 2026/10/15】預訂 18:00 聚聚樓 或 Papàroy 晚餐</div>
+                  <div class="text-slate-500 mt-0.5">聚聚樓（誠品松菸 3F，僅 48 席）透過 TableCheck 預訂；Papàroy 致電 (02)2767-2775 [60, 62]。</div>
+                </div>
+              </label>
+
+              <label class="flex items-start space-x-2.5 p-2.5 rounded-lg border border-rose-200 bg-rose-50/40 hover:bg-rose-50 cursor-pointer">
+                <input type="checkbox" data-check-id="chk-3" class="mt-0.5 rounded text-rose-600" onchange="saveChecklist()" />
+                <div>
+                  <div class="font-bold text-rose-900">【關鍵日 2026/10/26 週一】搶訂 88F Simple Kaffa Sola</div>
+                  <div class="text-rose-800 mt-0.5">僅開放 7 天內 inline 訂位！鎖定 11/02 10:00 剛開店時段（光線最清澈、人最少），綁定信用卡訂金 NT$250/人（前一日中午 12:00 前取消免費）[15, 20, 23]。</div>
+                </div>
+              </label>
+
+              <label class="flex items-start space-x-2.5 p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                <input type="checkbox" data-check-id="chk-4" class="mt-0.5 rounded text-teal-600" onchange="saveChecklist()" />
+                <div>
+                  <div class="font-semibold text-slate-900">【當日動線提醒】前往「臺北101辦公大樓 1 樓」報到</div>
+                  <div class="text-slate-500 mt-0.5">2026/07/01 起，88F 天空興波與觀景台入口均改至信義路五段 7 號 1 樓大廳，請勿走去購物中心 5 樓 [13, 15]。</div>
+                </div>
+              </label>
+
+              <label class="flex items-start space-x-2.5 p-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                <input type="checkbox" data-check-id="chk-5" class="mt-0.5 rounded text-teal-600" onchange="saveChecklist()" />
+                <div>
+                  <div class="font-semibold text-slate-900">【出發前一日 2026/11/01】確認悠遊卡餘額與 1571 即時班表</div>
+                  <div class="text-slate-500 mt-0.5">首都客運 1571 可直接刷悠遊卡／一卡通上下車（單程 NT$136/人，來回 NT$272/人）[1, 2]。</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Quick Structural Comparison Box -->
+          <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-5">
+            <h3 class="text-base font-bold text-slate-900 mb-3">三種方案結構快速對照</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-100 text-slate-700 border-b border-slate-200">
+                    <th class="py-2 px-2">指標</th>
+                    <th class="py-2 px-2">方案 A (信義)</th>
+                    <th class="py-2 px-2 text-teal-800 font-bold">方案 B (松菸★)</th>
+                    <th class="py-2 px-2">方案 C (永康饒河)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                  <tr>
+                    <td class="py-2 px-2 font-medium">11/02 營業度</td>
+                    <td class="py-2 px-2 text-amber-700">受限 (四四南村休)</td>
+                    <td class="py-2 px-2 text-emerald-700 font-semibold">100% 完整營業</td>
+                    <td class="py-2 px-2 text-teal-700">高完整度</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-2 font-medium">累計步行【推測】</td>
+                    <td class="py-2 px-2">2.2 km (30-35分)</td>
+                    <td class="py-2 px-2 font-semibold">2.6 km (35-45分)</td>
+                    <td class="py-2 px-2">4.2 km (60-75分)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-2 font-medium">回程交通【確鑿】</td>
+                    <td class="py-2 px-2">市府站 1571 客運</td>
+                    <td class="py-2 px-2 font-semibold">市府站 1571 客運</td>
+                    <td class="py-2 px-2">松山站臺鐵自強號</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 px-2 font-medium">兩人總預算</td>
+                    <td class="py-2 px-2">NT$3,980–10,500</td>
+                    <td class="py-2 px-2 font-semibold">NT$3,860–9,800</td>
+                    <td class="py-2 px-2">NT$3,520–5,800</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: TAIPEI 101 ANALYSIS ==================== -->
+    <section id="sec-101" class="space-y-8 hidden">
+      <div class="gh-alert gh-caution">
+        <div class="font-bold text-sm mb-1">[!CAUTION] 2026年7月1日起臺北101入場動線重大異動（Mandatory Operational Change）</div>
+        <p class="text-xs sm:text-sm leading-relaxed">
+          【確鑿】自 2026 年 7 月 1 日起，原本位於購物中心 5 樓的「臺北101觀景台售票處與報到入口」，已調整至<strong>「臺北101辦公大樓 1 樓（臺北市信義區信義路五段 7 號 1 樓）」</strong>；同時，前往 88 樓高空咖啡廳「Simple Kaffa Sola 天空興波」亦須先至<strong>辦公大樓 1 樓專屬接待櫃檯</strong>辦理報到並領取座位卡，再由專人引導搭乘高速電梯上樓 [13, 15, 16]。抵達時請直接前往辦公大樓 1 樓大廳，切勿依循舊版旅遊攻略前往購物中心 5 樓！
+        </p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-6">
+        <h2 class="text-xl font-bold text-slate-900 mb-2">臺北101高空體驗價值評估：買票登 89 樓觀景台 vs. 免門票預約 88 樓「天空興波」</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mb-6">
+          【推測】以「情侶約會私密性、座位舒適度與資金轉化率」進行實證對比，不購買純入場費之觀景台門票，改為提前 7 天預約 88 樓世界冠軍咖啡「Simple Kaffa Sola 天空興波」，可將門票預算 100% 轉化為雲端雙人雅座與精品餐飲 [12, 19]。
+        </p>
+
+        <!-- Interactive Seat & Ticket Simulator -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <!-- Option 1: 89F Observatory -->
+          <div class="border border-slate-200 rounded-xl p-5 bg-slate-50">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-bold uppercase px-2.5 py-1 rounded bg-slate-200 text-slate-800">玩法一：傳統觀光客模式</span>
+              <span class="text-xs font-semibold text-slate-600">【確鑿】0% 餐飲折抵</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">購買 89F（或 101F）觀景台門票</h3>
+            <ul class="mt-4 space-y-2.5 text-xs sm:text-sm text-slate-700">
+              <li><strong>【確鑿】兩人票價支出：</strong>89F 一般成人全票 NT$600/人（兩人合計 <strong>NT$1,200</strong>）；若加購 101F 秘境花園（NT$380/人），兩人套票合計 <strong>NT$1,960</strong>；快速通關票 NT$3,000/人 [13, 14]。</li>
+              <li><strong>【確鑿】營運時間與設施：</strong>每日 10:00–21:00（最後入場 20:15），37 秒高速電梯直達 89F（360度環景、kafeD 櫃位）、88F 風阻尼球、91F 戶外賞月區（視天候開放）[11, 13]。</li>
+              <li><strong>【推測】約會體驗痛點：</strong>門票 NT$1,200 完全無法折抵餐飲；屬於開放式觀光流動場域，常有團客走動與排隊拍照人潮，需全程站立或走動，較難擁有安靜私密的兩人世界 [11]。</li>
+            </ul>
+          </div>
+
+          <!-- Option 2: 88F Simple Kaffa Sola -->
+          <div class="border-2 border-teal-600 rounded-xl p-5 bg-teal-50/30">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-bold uppercase px-2.5 py-1 rounded bg-teal-700 text-white">玩法二：情侶高階質感首推</span>
+              <span class="text-xs font-semibold text-emerald-700">【確鑿】100% 全額折抵餐飲</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">免門票預約 88F「Simple Kaffa Sola 天空興波」</h3>
+            <ul class="mt-4 space-y-2.5 text-xs sm:text-sm text-slate-700">
+              <li><strong>【確鑿】座位分級與低消規範（另加 10% 服務費）：</strong>
+                <ul class="list-disc pl-5 mt-1 space-y-1 text-xs">
+                  <li><strong>一般座位（非靠窗，有階梯）：</strong>每人低消一杯飲品或 NT$300（兩人約 <strong>NT$600–850</strong>，僅觀景台門票一半預算！）[19, 20]。</li>
+                  <li><strong>雙人角落觀景座位（窗邊）：</strong>每桌低消 <strong>NT$1,500</strong>（專為情侶設計）[19, 20]。</li>
+                  <li><strong>標準窗邊觀景座位（1–4人）：</strong>每桌低消 <strong>NT$2,000</strong> [19, 20]。</li>
+                  <li><strong>海灣型沙發（2–8人）：</strong>每桌低消 <strong>NT$3,000</strong> [19, 20]。</li>
+                </ul>
+              </li>
+              <li><strong>【確鑿】空間與餐飲亮點：</strong>WBC 世界咖啡師大賽冠軍吳則霖團隊打造，380 公尺高空落地窗配墨綠蛇紋石吧檯，保證享有 <strong>90 分鐘專屬座位</strong>，推薦手沖單品、咖啡調酒、地瓜三兄弟與抹茶捲 [12, 15, 19]。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Detailed Comparison Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs sm:text-sm text-left border border-slate-200">
+            <thead class="bg-slate-100 text-slate-800">
+              <tr>
+                <th class="p-3 border-b border-slate-200">比較維度</th>
+                <th class="p-3 border-b border-slate-200">玩法一：購買 89F 觀景台門票</th>
+                <th class="p-3 border-b border-slate-200 bg-teal-50 text-teal-900">玩法二：預約 88F 天空興波 ＋ 4F SALT & STONE</th>
+                <th class="p-3 border-b border-slate-200">資訊狀態與查核依據</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="p-3 font-semibold">兩人總費用</td>
+                <td class="p-3">89F 全票：NT$1,200 (NT$600×2)<br>89F+101F 套票：NT$1,960 (NT$980×2)</td>
+                <td class="p-3 bg-teal-50/30 font-medium">88F 一般座低消：約 NT$600 (NT$300×2)<br>88F 雙人角落窗位：每桌 NT$1,500<br>4F 午餐低消：NT$1,320 (每人 NT$600+10%)</td>
+                <td class="p-3 text-xs text-slate-600">【確鑿】Stage 101 與 inline 訂位頁面 [13, 20, 22]</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold">費用性質</td>
+                <td class="p-3">純門票支出（不含任何餐飲折抵）</td>
+                <td class="p-3 bg-teal-50/30 font-medium">100% 全額折抵世界冠軍咖啡、甜點與手工義式餐點</td>
+                <td class="p-3 text-xs text-slate-600">【確鑿】店方營業規範 [19, 22]</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold">視野與樓層</td>
+                <td class="p-3">89F (360度環景)、88F (風阻尼球)、91F (戶外視天候)</td>
+                <td class="p-3 bg-teal-50/30 font-medium">88F (大面落地窗俯瞰盆地與淡水河)、4F (挑高歐風中庭花園)</td>
+                <td class="p-3 text-xs text-slate-600">【確鑿】場館樓層配置 [12, 13]</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold">預約與報到動線</td>
+                <td class="p-3">線上或辦公大樓 1F 購票報到，搭 37 秒電梯上 89F</td>
+                <td class="p-3 bg-teal-50/30 font-medium">出發前 7 天 (10/26) 於 inline 訂位，於辦公大樓 1F 專屬櫃檯報到上 88F</td>
+                <td class="p-3 text-xs text-slate-600">【確鑿】2026/07/01 入場新制 [13, 15, 23]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: MONDAY OPERATION RADAR ==================== -->
+    <section id="sec-radar" class="space-y-8 hidden">
+      <div class="gh-alert gh-warning">
+        <div class="font-bold text-sm mb-1">[!WARNING] 關鍵時間陷阱：2026年11月2日不僅是星期一，更是「11月第一個星期一」</div>
+        <p class="text-xs sm:text-sm leading-relaxed">
+          【確鑿】2026年11月1日為星期日，因此 11月2日為該月首個週一。經臺北市信義區公所與店家官方資料兩輪交叉核對：<strong>四四南村 A/B 館（眷村文物館）每週一固定休館；而平時週一有營業的 C 館「好丘 Good cho's 信義店」與 D 館「拾藝術選物店」，明文規定「每個月第一個星期一公休」</strong> [4, 25, 26]。當天四四南村所有室內場館與餐廳全面關閉，僅戶外草坡開放免費拍 101 同框照！
+        </p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">2026/11/02 (週一) 信義／松菸／永康候選場館營運排雷雷達</h2>
+            <p class="text-xs text-slate-500 mt-0.5">點擊篩選按鈕可快速檢視「週一安全營業」與「11/02 公休地雷」名單</p>
+          </div>
+          <div class="inline-flex rounded-lg border border-slate-200 p-1 bg-slate-100 self-start">
+            <button onclick="filterRadar('all')" id="radar-btn-all" class="px-3 py-1.5 rounded text-xs font-semibold bg-white text-slate-900 shadow-xs">全部場館 (12)</button>
+            <button onclick="filterRadar('open')" id="radar-btn-open" class="px-3 py-1.5 rounded text-xs font-medium text-emerald-800 hover:bg-white">正常營業・安全 (3大群落)</button>
+            <button onclick="filterRadar('closed')" id="radar-btn-closed" class="px-3 py-1.5 rounded text-xs font-medium text-rose-800 hover:bg-white">公休地雷・避開 (9處)</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="radar-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: INTERACTIVE BUDGET & DINING CALCULATOR ==================== -->
+    <section id="sec-budget" class="space-y-8 hidden">
+      <div class="gh-alert gh-note">
+        <div class="font-bold text-sm mb-1">[!NOTE] 預算估算可靠性原則（Verified Fixed Costs vs. Variable Dining Costs）</div>
+        <p class="text-xs sm:text-sm leading-relaxed">
+          【確鑿】本試算器嚴格區分「已確鑿之固定票價／低消門檻」（如首都客運 1571 單程 NT$136、88F 天空興波與各餐廳低消）與「無法確定最終結帳總額之現場點餐／伴手禮費用」。您可點擊下方四組預設配置，或自由切換各餐期餐廳組合，系統將即時重算兩人總花費與人均預算。
+        </p>
+      </div>
+
+      <!-- Preset Buttons & Live Summary Banner -->
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-6">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-200">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">雙人一日輕旅行動態預算試算器 (Couple Budget Simulator)</h2>
+            <p class="text-xs text-slate-500 mt-1">快速套用報告預設方案，或於下方手動調整 6 大消費項目：</p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <button onclick="applyBudgetPreset('budget')" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-800">
+                套用：平價輕巧方案 (NT$3,174)
+              </button>
+              <button onclick="applyBudgetPreset('smart')" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-900">
+                套用：高空+午茶二擇一優化 (NT$4,294)
+              </button>
+              <button onclick="applyBudgetPreset('standard')" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-teal-600 bg-teal-700 text-white shadow-xs">
+                套用：中等質感推薦標準 (★ NT$6,194)
+              </button>
+              <button onclick="applyBudgetPreset('luxury')" class="px-3 py-1.5 text-xs font-semibold rounded-md border border-indigo-300 bg-indigo-50 hover:bg-indigo-100 text-indigo-900">
+                套用：稍精緻寵愛方案 (NT$9,384)
+              </button>
+            </div>
+          </div>
+
+          <!-- Total Display Box -->
+          <div class="bg-slate-900 text-white p-5 rounded-xl min-w-[280px] flex flex-col justify-between">
+            <div class="flex justify-between items-center text-xs text-slate-400">
+              <span>兩人一日預估總計 (2 Adults)</span>
+              <span id="budget-tier-badge" class="bg-teal-600 text-white px-2 py-0.5 rounded text-[11px] font-bold">中等質感推薦</span>
+            </div>
+            <div class="text-3xl font-bold text-amber-300 my-1" id="budget-total-display">NT$ 6,194</div>
+            <div class="flex justify-between text-xs text-slate-300 pt-2 border-t border-slate-700">
+              <span>平均每人：<strong id="budget-per-person">NT$ 3,097</strong></span>
+              <span id="budget-fixed-ratio">固定票價/低消佔比高</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stacked Cost Breakdown Bar -->
+        <div class="my-6">
+          <div class="flex justify-between text-xs font-medium text-slate-600 mb-2">
+            <span>費用結構視覺化比例（交通 / 101高空 / 午餐 / 下午茶 / 晚餐 / 伴手禮）</span>
+            <span id="budget-bar-labels"></span>
+          </div>
+          <div class="w-full h-4 bg-slate-100 rounded-full overflow-hidden flex" id="budget-stacked-bar">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- 6 Interactive Selectors -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6">
+          <!-- 1. Intercity & Local Transport -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <label class="block text-xs font-bold uppercase text-slate-500">1. 城際與市區交通費（兩人合計）</label>
+            <select id="sel-transport" onchange="calculateBudget()" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-800">
+              <option value="604">【平價】1571客運來回(NT$544) ＋ 全程公車捷運(NT$60) = NT$604</option>
+              <option value="694" selected>【推薦★】1571客運來回(NT$544) ＋ 101至松菸計程車/回程步行(NT$150) = NT$694</option>
+              <option value="794">【精緻】1571客運來回(NT$544) ＋ 兩段市區移動皆搭Uber(NT$250) = NT$794</option>
+              <option value="792">【方案C】去程1571客運(NT$272) ＋ 兩段捷運(NT$110) ＋ 回程松山臺鐵自強號(NT$410) = NT$792</option>
+            </select>
+            <p class="text-[11px] text-slate-500 mt-2">
+              【確鑿】1571單程全票 NT$136/人（4張共 NT$544）；計程車資依路況微幅浮動【推測】[1, 2, 4]。
+            </p>
+          </div>
+
+          <!-- 2. Taipei 101 High-Altitude Experience -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <label class="block text-xs font-bold uppercase text-slate-500">2. 臺北101高空體驗費（88F 或 89F）</label>
+            <select id="sel-101" onchange="calculateBudget()" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-800">
+              <option value="0">【純逛商場】不進 88F 亦不買觀景台門票 = NT$0</option>
+              <option value="600">【平價高空】88F 天空興波一般座低消 (NT$300/人×2，全額抵餐飲) = NT$600</option>
+              <option value="850">【輕巧高空】88F 天空興波一般座點 2 杯手沖＋甜點 = NT$850</option>
+              <option value="1500" selected>【推薦★】88F 天空興波雙人角落窗位低消 (或一般座豐富點) = NT$1,500</option>
+              <option value="1200">【純買門票】89F 觀景台成人全票 2 張 (NT$600×2，無餐飲折抵) = NT$1,200</option>
+              <option value="2000">【精緻窗邊】88F 天空興波標準窗邊觀景座位低消 (或 89F+101F 套票 NT$1,960) = NT$2,000</option>
+            </select>
+            <p class="text-[11px] text-slate-500 mt-2">
+              【確鑿】88F 低消與 89F 門票均已確認；88F 內用限時 90 分鐘，須於 10/26 線上預訂 [13, 19, 20]。
+            </p>
+          </div>
+
+          <!-- 3. Lunch -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <label class="block text-xs font-bold uppercase text-slate-500">3. 午餐選擇（臺北101館內免日曬）</label>
+            <select id="sel-lunch" onchange="calculateBudget()" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-800">
+              <option value="550">【平價】101 B1美食街（阿達師五星麵舖 / 養心茶樓Mini / Naan Stop）= NT$550</option>
+              <option value="750">【平價豐盛】101 B1美食街雙人套餐加小菜飲品 = NT$750</option>
+              <option value="1450" selected>【推薦★】101 4F SALT & STONE 加州風義式餐廳（寬帶麵+披薩+胡桃派）= NT$1,450</option>
+              <option value="1650">【中等微醺】101 4F SALT & STONE 雙人餐點含飲品 (低消NT$600+10%/人) = NT$1,650</option>
+              <option value="1900">【高空蔬食】101 35F/85F 菜鳥書蒔 VEGEtable 高空蔬食午茶 = NT$1,900</option>
+              <option value="2640">【精緻米其林】101 5F 富錦樹台菜香檳 (開放區低消NT$1,200+10%/人) = NT$2,640</option>
+            </select>
+            <p class="text-[11px] text-slate-500 mt-2">
+              【確鑿】各店低消已確認；實際結帳金額視當日點餐內容而定（無法確定最終點餐總額）[12, 22]。
+            </p>
+          </div>
+
+          <!-- 4. Afternoon Tea -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <label class="block text-xs font-bold uppercase text-slate-500">4. 午後咖啡廳（保證久坐 60–90 分鐘）</label>
+            <select id="sel-tea" onchange="calculateBudget()" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-800">
+              <option value="0">【預算優化】上午 88F 已吃甜點，午後純逛松菸與誠品 24H 書店 = NT$0</option>
+              <option value="420">【平價不限時】誠品松菸 3F eslite café (每人低消NT$190+10%，不限時) = NT$420</option>
+              <option value="750" selected>【推薦★】誠品松菸 B1 成真咖啡（宇治抹茶舒芙蕾＋2杯創意咖啡杜鵑）= NT$750</option>
+              <option value="800">【方案A/雨天】BELLAVITA 2F Café Kitsuné 小狐狸 或 奎士咖啡不限時 = NT$800</option>
+              <option value="900">【方案C永康】永康天使 Angel cafe 玻璃屋(不限時) 或 羊毛與花 = NT$900</option>
+              <option value="950">【精緻書香】誠品行旅 1F The Lounge 大廳書坊 或 Cama 豆留文青鍋爐房 = NT$950</option>
+            </select>
+            <p class="text-[11px] text-slate-500 mt-2">
+              【確鑿】所有入選咖啡廳週一均正常營業（已排除 In Between、Tropo、OZ Cafe 等週一公休店）[32, 34, 39]。
+            </p>
+          </div>
+
+          <!-- 5. Dinner -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <label class="block text-xs font-bold uppercase text-slate-500">5. 浪漫晚餐（鄰近返程乘車點 10 分鐘內）</label>
+            <select id="sel-dinner" onchange="calculateBudget()" class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-800">
+              <option value="650">【方案C夜市】饒河街夜市必比登巡禮（福州世祖胡椒餅＋陳董藥燉排骨）= NT$650</option>
+              <option value="700">【平價輕食】大巨蛋 B2 玖仰茶食文化 或 松菸 B1 金春喜韓廚 = NT$700</option>
+              <option value="1200">【中平價自助吧】誠品松菸 B1 橫濱牛排（含沙拉咖哩霜淇淋吧）或 勝勢豬排 = NT$1,200</option>
+              <option value="1400" selected>【推薦★】松菸 553 巷 Papàroy 義式手作料理 或 大巨蛋 1F PRESERVE / Lit Lit = NT$1,400</option>
+              <option value="1800">【微醺餐酒】大巨蛋 1F 紫木槿韓餐酒 / 湊湊火鍋 或 信義 Woolloomooloo = NT$1,800</option>
+              <option value="2200">【精緻夜景】誠品松菸 3F 聚聚樓東方美學中菜 或 微風南山 7F UMAMI金色三麥 = NT$2,200</option>
+            </select>
+            <p class="text-[11px] text-slate-500 mt-2">
+              【確鑿】已排除微風南山 48F CÉ LA VI 與誠品行旅 2F In Between（均為週一公休）[33, 34, 60]。
+            </p>
+          </div>
+
+          <!-- 6. Souvenirs & Buffer -->
+          <div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+            <div class="flex justify-between items-center">
+              <label class="block text-xs font-bold uppercase text-slate-500">6. 預備金與伴手禮（自由購物）</label>
+              <span id="val-souvenir" class="text-sm font-bold text-teal-700">NT$ 400</span>
+            </div>
+            <input type="range" id="rng-souvenir" min="0" max="1500" step="50" value="400" oninput="calculateBudget()" class="mt-3 w-full accent-teal-600 cursor-pointer" />
+            <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+              <span>NT$0</span>
+              <span>NT$400 (推薦)</span>
+              <span>NT$800</span>
+              <span>NT$1,500</span>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-1">
+              【無法確定】如 101 B1 SAKImoto 生吐司、松菸風格店家手作小物或海邊走走蛋捲，屬個人自由支出 [18, 37]。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Dining Directory Table -->
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-6">
+        <h3 class="text-lg font-bold text-slate-900 mb-4">2026/11/02 (週一) 嚴選營業餐廳與咖啡廳完整資料庫</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-left border border-slate-200">
+            <thead class="bg-slate-100 text-slate-700">
+              <tr>
+                <th class="p-2.5 border-b">餐期與分級</th>
+                <th class="p-2.5 border-b">餐廳名稱與位置</th>
+                <th class="p-2.5 border-b">招牌特色與約會亮點</th>
+                <th class="p-2.5 border-b">兩人預估花費／低消</th>
+                <th class="p-2.5 border-b">11/02 (週一) 營業時間與地址</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="p-2.5 font-semibold text-teal-800">上午高空首選</td>
+                <td class="p-2.5 font-bold">Simple Kaffa Sola 天空興波 (101 88F)</td>
+                <td class="p-2.5">全球50大最佳咖啡館第1名，380m雲端落地窗，手沖、咖啡調酒、地瓜三兄弟（限時90分）</td>
+                <td class="p-2.5">一般座約 NT$850 (低消NT$300/人)<br>角落窗位 NT$1,500/桌</td>
+                <td class="p-2.5">10:00–20:00｜信義路五段7號88F (須先至辦公大樓1F報到) [15, 20]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold">午餐・平價</td>
+                <td class="p-2.5 font-bold">臺北101 B1 美食街 (Naan Stop / 養心茶樓Mini / 忠青商行)</td>
+                <td class="p-2.5">必比登番紅花團隊印度烤餅、港式蒸籠蔬食、台式蝦仁飯、阿達師椒麻炸蛋麵</td>
+                <td class="p-2.5">NT$550–750 / 2人 (無服務費)</td>
+                <td class="p-2.5">11:00–21:30｜市府路45號B1 [12, 18]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-teal-800">午餐・中等★</td>
+                <td class="p-2.5 font-bold">SALT & STONE 台北101店 (購物中心 4F)</td>
+                <td class="p-2.5">挑高加州風義式餐廳，木質植栽明亮時髦。必點手工寬帶麵、農夫派披薩、胡桃派（限時2小時）</td>
+                <td class="p-2.5">NT$1,450–1,650 / 2人 (低消NT$600+10%/人)</td>
+                <td class="p-2.5">11:30–21:30｜市府路45號4樓松智環 [22, 56]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold">午餐・稍精緻</td>
+                <td class="p-2.5 font-bold">富錦樹台菜香檳 (101 5F) / 菜鳥書蒔 (35F)</td>
+                <td class="p-2.5">富錦樹：米其林一星台菜結合香檳美學；菜鳥書蒔：高空溫室蔬食午茶、雲朵漂浮珍奶</td>
+                <td class="p-2.5">富錦樹約 NT$2,640–3,200<br>菜鳥書蒔約 NT$1,600–2,200</td>
+                <td class="p-2.5">富錦樹 11:30–21:30｜市府路45號5樓 [12, 18]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold">午茶・不限時</td>
+                <td class="p-2.5 font-bold">eslite café (誠品松菸 3F) / The Lounge (誠品行旅 1F)</td>
+                <td class="p-2.5">eslite café 位於 24H 書店內安靜有插座且不限時；The Lounge 擁五千冊書牆大沙發</td>
+                <td class="p-2.5">eslite café 約 NT$420–650 (低消NT$190+10%/人)</td>
+                <td class="p-2.5">10:00–24:00｜菸廠路88號3樓 [32, 55]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-teal-800">午茶・中等★</td>
+                <td class="p-2.5 font-bold">成真咖啡 ComeTrue (誠品松菸 B1) / Cama 豆留文青</td>
+                <td class="p-2.5">成真：日光植栽木質調，必點宇治抹茶舒芙蕾與創意咖啡「杜鵑」；豆留文青：古蹟鍋爐房光雕</td>
+                <td class="p-2.5">NT$750–950 / 2人 (可坐滿90分鐘以上)</td>
+                <td class="p-2.5">10:00–22:00｜菸廠路88號B1 / 光復南路133號 [39, 45]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold">午茶・方案A/C</td>
+                <td class="p-2.5 font-bold">Café Kitsuné (BELLAVITA 2F) / 永康天使 Angel cafe</td>
+                <td class="p-2.5">小狐狸：歐式拱廊日法混血咖啡；永康天使：永康街絕美黑色玻璃屋植栽秘境（不限時）</td>
+                <td class="p-2.5">NT$800–900 / 2人</td>
+                <td class="p-2.5">小狐狸 11:00–21:30｜永康天使 11:30–21:00 [48, 51]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-teal-800">晚餐・中等★</td>
+                <td class="p-2.5 font-bold">Papàroy 義式手作料理 (松菸553巷) / 大巨蛋 1F (PRESERVE / Lit Lit)</td>
+                <td class="p-2.5">Papàroy：靜謐巷弄溫暖黃光義式燉飯；大巨蛋1F潮美食公園：流線建築光影微醺餐酒</td>
+                <td class="p-2.5">NT$1,400–1,800 / 2人</td>
+                <td class="p-2.5">Papàroy 17:30–21:30 (忠孝東路四段553巷16號) [31, 40]</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold">晚餐・稍精緻</td>
+                <td class="p-2.5 font-bold">聚聚樓 eslite garden (誠品松菸 3F) / UMAMI 金色三麥 (微風南山 7F)</td>
+                <td class="p-2.5">聚聚樓：僅48席東方美學木質調，遠眺大巨蛋與101夜景，必點青檸桃膠銀耳露與江浙粵菜</td>
+                <td class="p-2.5">NT$2,200–3,000 / 2人</td>
+                <td class="p-2.5">聚聚樓晚餐 17:30–21:00｜菸廠路88號3樓 [33, 58, 62]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: TRANSPORT & NAVIGATION HUB ==================== -->
+    <section id="sec-transport" class="space-y-8 hidden">
+      <div class="gh-alert gh-note">
+        <div class="font-bold text-sm mb-1">[!NOTE] 返程尖峰風險控管策略（Evening Commute Risk Control）</div>
+        <p class="text-xs sm:text-sm leading-relaxed">
+          【推測】星期一傍晚 17:30–18:45 為信義區與市府轉運站通勤下班最尖峰。本規劃刻意將晚餐安排於 <strong>18:00–19:35</strong>，讓情侶在餐廳內優雅度過尖峰車潮；當 19:45 散步返抵市府轉運站搭乘 <strong>19:50 或 20:00</strong> 班次時，排隊人潮與雪山隧道車流均已消退，約 56–58 分鐘即可於 20:48–20:56 舒適返抵宜蘭轉運站 [2, 3]。
+        </p>
+      </div>
+
+      <!-- Bus vs Train Comparison + Evening Schedule -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Left: 1571 Return Timetable -->
+        <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-5">
+          <span class="text-xs font-bold bg-teal-100 text-teal-800 px-2.5 py-0.5 rounded">方案 A / 方案 B 適用</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-2">首都客運【1571】市府轉運站 ➔ 宜蘭轉運站 晚間班次表</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">
+            【確鑿】單程全票 NT$136/人（市府轉運站 1 樓月台候車，末班車 23:00/23:10）；以下為常態週一晚間暫定班次【推測】[2, 3, 64]：
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left border border-slate-200">
+              <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                  <th class="p-2.5 border-b">市府轉運站發車 (暫定)</th>
+                  <th class="p-2.5 border-b">預估抵達宜蘭轉運站</th>
+                  <th class="p-2.5 border-b">預估行車時間</th>
+                  <th class="p-2.5 border-b">推薦狀態與評估</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="p-2.5 font-semibold">19:30</td>
+                  <td class="p-2.5">20:28</td>
+                  <td class="p-2.5">約 58 分鐘</td>
+                  <td class="p-2.5 text-slate-600">晚餐提早結束可搭</td>
+                </tr>
+                <tr>
+                  <td class="p-2.5 font-semibold">19:40</td>
+                  <td class="p-2.5">20:38</td>
+                  <td class="p-2.5">約 58 分鐘</td>
+                  <td class="p-2.5 text-slate-600">尖峰車流已消退</td>
+                </tr>
+                <tr class="bg-teal-50/60 font-medium">
+                  <td class="p-2.5 font-bold text-teal-900">19:50 (★首推)</td>
+                  <td class="p-2.5 font-bold text-teal-900">20:48</td>
+                  <td class="p-2.5 text-teal-900">約 58 分鐘</td>
+                  <td class="p-2.5 text-teal-800 font-bold">19:35 吃完晚餐散步 8 分鐘完美銜接</td>
+                </tr>
+                <tr class="bg-teal-50/60 font-medium">
+                  <td class="p-2.5 font-bold text-teal-900">20:00 (★首推)</td>
+                  <td class="p-2.5 font-bold text-teal-900">20:56</td>
+                  <td class="p-2.5 text-teal-900">約 56 分鐘</td>
+                  <td class="p-2.5 text-teal-800 font-bold">雪隧極順暢，21:00 前輕鬆抵宜</td>
+                </tr>
+                <tr>
+                  <td class="p-2.5 font-semibold">20:10 / 20:20 / 20:30</td>
+                  <td class="p-2.5">21:06 / 21:15 / 21:25</td>
+                  <td class="p-2.5">約 55 分鐘</td>
+                  <td class="p-2.5 text-slate-600">晚間續攤散步之充裕備援</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right: TRA Return Timetable (Route C) -->
+        <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-5">
+          <span class="text-xs font-bold bg-indigo-100 text-indigo-800 px-2.5 py-0.5 rounded">方案 C（饒河夜市）專屬回程</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-2">臺鐵【松山火車站 ➔ 宜蘭火車站】晚間直達班次表</h3>
+          <p class="text-xs text-slate-500 mt-1 mb-4">
+            【確鑿】逛完饒河街夜市自慈祐宮端（捷運松山站 5 號出口）步行 2 分鐘即達臺鐵松山站，免折返信義區。目前（10/15）已進入乘車前 28 天預售期內 [7, 8, 9]：
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left border border-slate-200">
+              <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                  <th class="p-2.5 border-b">車次與車種 (暫定)</th>
+                  <th class="p-2.5 border-b">松山發車 ➔ 宜蘭抵達</th>
+                  <th class="p-2.5 border-b">行車時間</th>
+                  <th class="p-2.5 border-b">訂票規範與備註</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="p-2.5 font-semibold">246次 自強號</td>
+                  <td class="p-2.5">18:48 ➔ 20:18</td>
+                  <td class="p-2.5">1小時30分</td>
+                  <td class="p-2.5 text-slate-600">對號座（約 NT$205/人）</td>
+                </tr>
+                <tr>
+                  <td class="p-2.5 font-semibold">4046次 區間快車</td>
+                  <td class="p-2.5">19:07 ➔ 20:54</td>
+                  <td class="p-2.5">1小時47分</td>
+                  <td class="p-2.5 text-emerald-700 font-medium">免預訂，可直接刷悠遊卡進站</td>
+                </tr>
+                <tr class="bg-indigo-50/50">
+                  <td class="p-2.5 font-bold text-indigo-900">250次 新自強號 (EMU3000 ★)</td>
+                  <td class="p-2.5 font-bold text-indigo-900">19:12 ➔ 20:24</td>
+                  <td class="p-2.5 text-indigo-900">1小時12分</td>
+                  <td class="p-2.5 text-indigo-800 font-bold">全車對號座，須事先預訂無站票</td>
+                </tr>
+                <tr class="bg-indigo-50/50">
+                  <td class="p-2.5 font-bold text-indigo-900">248次 太魯閣號 (★次選)</td>
+                  <td class="p-2.5 font-bold text-indigo-900">19:32 ➔ 20:36</td>
+                  <td class="p-2.5 text-indigo-900">1小時04分</td>
+                  <td class="p-2.5 text-indigo-800 font-bold">速度最快，全車對號座須預訂</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 Nodes Quick Navigation Links Table -->
+      <div class="bg-white border border-slate-200 rounded-xl shadow-xs p-6">
+        <h3 class="text-lg font-bold text-slate-900 mb-2">全行程 12 個核心節點快速導航連結表</h3>
+        <p class="text-xs text-slate-500 mb-4">點擊右側連結將於新分頁開啟外部網頁地圖搜尋位置：</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3" id="nav-links-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-6 px-4 mt-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>
+        <div class="font-bold text-slate-200">臺北情侶一日輕旅行深度規劃互動系統 (v1.0)</div>
+        <div class="mt-1">資料基準：2026/10/15 實證查核｜目標日期：2026/11/02 (星期一)｜遵循 ICE 多階段驗證與可靠性標記規範</div>
+      </div>
+      <div class="text-right">
+        <span>狀態標記說明：【確鑿】具官方或雙重來源實證 ｜ 【推測】基於常態時刻表或空間動線推論</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== APPLICATION JAVASCRIPT ==================== -->
+  <script>
+    // State Management
+    let currentRoute = 'B';
+    let currentWeather = 'sunny';
+
+    // Timeline Data Repository
+    const timelineData = {
+      B_sunny: [
+        {
+          id: 'b1',
+          time: '08:30–08:45',
+          title: '宜蘭轉運站（校舍路190號）集合候車',
+          transport: '市區前往宜蘭轉運站（火車站後站側）；站內首都客運月台候車（15分鐘）',
+          desc: '避開 07:30–08:00 通勤最尖峰，從容購買咖啡或早點準備出發。可直接刷悠遊卡或一卡通上下車。',
+          cost: '早餐自理',
+          tag: '【確鑿】地址與乘車規範 [1]'
+        },
+        {
+          id: 'b2',
+          time: '08:45–09:48',
+          title: '搭乘首都客運【1571】直達臺北信義區（市府轉運站）',
+          transport: '國道5號直達市府轉運站（暫定離峰 15–20 分一班，行車約 60–63 分鐘）',
+          desc: '乘坐寬敞三排座椅並肩聊天或小憩補眠，完全免去臺北車站迷宮般的地下步行與月台轉乘。',
+          cost: 'NT$272（全票 NT$136×2）',
+          tag: '【確鑿】票價／【推測】行車時間 [2, 3]'
+        },
+        {
+          id: 'b3',
+          time: '09:48–10:02',
+          title: '市府轉運站 ➔ 臺北101辦公大樓 1 樓接待櫃檯',
+          transport: '沿「信義商圈 2F 立體空橋系統」慢步（約 850 公尺，步行 12–14 分鐘）',
+          desc: '穿越統一時代、微風信義、新光三越 A4/A8/A9/A11 與 ATT 4 FUN 空橋，沿途遮陽避雨、街景清爽好拍。（若想零步行可於忠孝東路搭信義幹線公車約 5 分鐘即達）。',
+          cost: 'NT$0（空橋散步）',
+          tag: '【確鑿】空橋動線 [4, 5]'
+        },
+        {
+          id: 'b4',
+          time: '10:02–11:40',
+          title: '第一站：臺北101 88樓「Simple Kaffa Sola 天空興波」',
+          transport: '【2026/07/01新制】於辦公大樓 1F（信義路五段7號1樓）櫃檯報到領卡，搭高速電梯直上 88F',
+          desc: '【主景點高空浪漫時光】免買 NT$1,200 觀景台門票，於全台最高世界冠軍咖啡廳入座 90 分鐘，在墨綠蛇紋石吧檯與 380 公尺落地窗前品嚐手沖單品、咖啡調酒與地瓜三兄弟／抹茶捲。',
+          cost: '約 NT$850–1,500（100% 折抵餐飲）',
+          tag: '【確鑿】10/26 須先上 inline 訂位 [13, 15, 20]'
+        },
+        {
+          id: 'b5',
+          time: '11:40–13:20',
+          title: '午餐：臺北101購物中心 4樓「SALT & STONE」（或 B1 美食街）',
+          transport: '搭電梯下 1 樓轉往購物中心 4 樓松智環（館內垂直移動約 5 分鐘，免曬太陽）',
+          desc: '在挑高明亮的加州風義式餐廳享用現烤農夫派披薩、手工寬帶麵與招牌胡桃派，用餐限時 120 分鐘，步調極為悠閒。',
+          cost: '約 NT$1,450–1,650（低消 NT$600+10%/人）',
+          tag: '【確鑿】inline 開放1個月內訂位 [22, 56]'
+        },
+        {
+          id: 'b6_44',
+          time: '13:20–13:55',
+          title: '彈性順遊：幾米月亮公車 ＆ 四四南村戶外草坡快拍',
+          transport: '自 101 松智路出口步行 3 分鐘（約 250 公尺）至信義路五段／松勤街口',
+          desc: '【首週一排雷提醒】11/2 四四南村室內館與好丘信義店皆公休，但週一午後戶外草坡空無一人，正好輕鬆拍攝「眷村復古門窗＋臺北101全景」雙人合照與幾米月亮公車。',
+          cost: 'NT$0（戶外免費）',
+          tag: '【確鑿】室內館首週一休館 [4, 26, 29]'
+        },
+        {
+          id: 'b7',
+          time: '13:55–14:10',
+          title: '四四南村／臺北101 ➔ 松山文創園區（松菸）',
+          transport: '搭乘計程車／Uber（約 6 分鐘，1.8 公里）或搭公車／捷運至國父紀念館站 5 號出口',
+          desc: '嚴格執行「單段步行超過 15 分鐘即改搭車」之舒適原則，此段 1.8 公里直接搭計程車（約 NT$110），保留雙腿體力給松菸古蹟漫步。',
+          cost: '約 NT$110（計程車）或 NT$40（公車2人）',
+          tag: '【確鑿】距離與接駁方案 [31, 57]'
+        },
+        {
+          id: 'b8',
+          time: '14:10–15:40',
+          title: '第二站：松山文創園區（巴洛克花園、生態池、閱樂書店、松菸風格店家）',
+          transport: '園區內平坦古蹟木棧道與迴廊散步（約 600 公尺，隨走隨停）',
+          desc: '在 19 世紀維多利亞風巴洛克花園噴水池、生態池畔綠色小木屋「閱樂書店」拍情侶照；逛東向製菸工廠 1 樓「松菸風格店家」（週一 11:00–19:00 正常營業）挑選設計小物。',
+          cost: 'NT$0（免門票，選物自理）',
+          tag: '【確鑿】松菸週一完整營業 [37, 38, 44]'
+        },
+        {
+          id: 'b9_tea',
+          time: '15:40–17:15',
+          title: '下午茶：誠品生活松菸 B1「成真咖啡」或 3F「eslite café」',
+          transport: '園區內步行 2 分鐘（約 150 公尺）進入誠品生活松菸大樓',
+          desc: '【90分鐘深度放鬆聊天】於溫潤木質植栽風的「成真咖啡」品嚐雲朵般蓬鬆的宇治抹茶舒芙蕾與創意咖啡「杜鵑」；或於 3 樓 24 小時書店旁「eslite café」（不限時）看書喝咖啡。',
+          cost: '約 NT$750–800（舒芙蕾＋2杯飲品）',
+          tag: '【確鑿】週一正常營業 [32, 39, 55]'
+        },
+        {
+          id: 'b10',
+          time: '17:15–18:00',
+          title: '誠品松菸 3F 24小時書店 ＆ 臺北大巨蛋 Garden City 傍晚散步',
+          transport: '由誠品 3 樓逛至 1 樓，再沿松菸大道漫步 3 分鐘至大巨蛋園區（約 250 公尺）',
+          desc: '並肩逛誠品松菸 24 小時書店與黑膠音樂館；傍晚步出戶外，欣賞大巨蛋流線燈光亮起，漫步 1 樓「食尚庭園／潮美食公園」與 B2 花園綠廊。',
+          cost: 'NT$0',
+          tag: '【確鑿】2026新地標週一營業 [32, 40, 41]'
+        },
+        {
+          id: 'b11',
+          time: '18:00–19:35',
+          title: '浪漫晚餐：誠品 3F「聚聚樓」／松菸 553 巷「Papàroy」／大巨蛋餐酒館',
+          transport: '位於松菸或大巨蛋園區內，步行 2–4 分鐘即達',
+          desc: '依偏好選擇可遠眺 101 與大巨蛋夜景的東方美學餐廳「聚聚樓」、553 巷溫暖黃光義式手工料理「Papàroy」，或大巨蛋 1 樓「PRESERVE / 紫木槿」，同時在餐廳內優雅避開 17:30–18:45 下班塞車尖峰。',
+          cost: '約 NT$1,400–2,200（雙人晚餐）',
+          tag: '【確鑿】週一晚間正常營業 [31, 40, 58]'
+        },
+        {
+          id: 'b12',
+          time: '19:35–20:48',
+          title: '松菸／大巨蛋 ➔ 市府轉運站搭乘【1571】返抵宜蘭轉運站',
+          transport: '沿忠孝東路四段 553 巷步行 6–8 分鐘（450公尺）回市府轉運站，搭 19:50 或 20:00 班次',
+          desc: '晚風中散步 6–8 分鐘（或由國父紀念館站 5 號出口搭捷運 1 站）直達市府轉運站 1 樓月台。晚間 19:50 發車已避開通勤人潮，約 56–58 分鐘順暢通過雪隧，於 20:48 舒適返抵宜蘭。',
+          cost: 'NT$272（客運全票 NT$136×2）',
+          tag: '【確鑿】動線與票價／【推測】時刻 [2, 3, 38]'
+        }
+      ],
+      B_rainy: [
+        {
+          id: 'r1',
+          time: '08:45–10:02',
+          title: '宜蘭轉運站【1571】➔ 市府轉運站 ➔ 2F 有頂蓋空橋直入臺北101',
+          transport: '【100% 免撐傘】自市府轉運站室內直接上 2 樓空橋，一路在屋簷下直入 101（或搭捷運至世貿站 4 號連通口）',
+          desc: '遭遇東北季風地形雨時，信義商圈二樓立體空橋與地下連通道可實現雙鞋完全不沾水。抵達後由館內連通前往辦公大樓 1 樓報到。',
+          cost: 'NT$272（1571客運 2 人）',
+          tag: '【確鑿】信義空橋全遮蔽系統 [5, 13]'
+        },
+        {
+          id: 'r2',
+          time: '10:02–13:30',
+          title: '臺北101 88樓「天空興波」聽雨喝手沖 ＋ 4樓「SALT & STONE」午餐',
+          transport: '同一棟大樓垂直電梯移動（0 公尺淋雨風險）',
+          desc: '【雨天關鍵決策】若雨勢大導致雲層低垂，切勿花 NT$1,200 買 89F 觀景台門票（91F 戶外必關閉且窗外易起霧），改在 88F 天空興波一般座（低消 NT$300/人）喝熱手沖咖啡，隨後下 4F 享用熱騰騰現烤披薩。',
+          cost: '約 NT$2,050–2,950（高空咖啡＋午餐）',
+          tag: '【確鑿】100% 折抵餐飲 [13, 20, 22]'
+        },
+        {
+          id: 'r3',
+          time: '13:30–15:30',
+          title: '取消四四南村戶外 ➔ 空橋直通「BELLAVITA 寶麗廣塲歐式玻璃穹頂」＆「Café Kitsuné」',
+          transport: '【100% 空橋連通】由 101 走 2F 空橋經微風南山、新光三越 A11/A9/A8 直接走進 BELLAVITA 2 樓',
+          desc: '在 BELLAVITA 挑高歐式玻璃穹頂中庭拍貴婦百貨情侶照，完全不受外頭風雨影響；於 2 樓日法混血「Café Kitsuné」點熱抹茶拿鐵與小狐狸餅乾優雅躲雨。',
+          cost: '約 NT$800（下午茶 2 人）',
+          tag: '【確鑿】週一 11:00–21:30 營業 [5, 51, 52]'
+        },
+        {
+          id: 'r4',
+          time: '15:30–18:00',
+          title: 'BELLAVITA ➔ 臺北大巨蛋 B2 花園綠廊 ＆ 誠品生活松菸（24H 書店／誠品電影院）',
+          transport: '【地下通廊直達】經微風信義 B1 進捷運市政府站，搭板南線 1 站至國父紀念館站，走 5 號出口地下通廊直入大巨蛋 B2',
+          desc: '漫步全新大巨蛋 B2 花園綠廊地下街（全台首店 fanfancy+ with GiGO、CREMIA 冰淇淋）；再至誠品生活松菸體驗 2 樓手作 DIY、3 樓 24H 書店與黑膠館，或在 B1 誠品電影院看場午後藝文電影。',
+          cost: 'NT$40（捷運 2 人，手作/電影自理）',
+          tag: '【確鑿】國父紀念館站5號出口地下連通 [32, 40, 42]'
+        },
+        {
+          id: 'r5',
+          time: '18:00–20:48',
+          title: '雨天暖心鍋物晚餐（湊湊火鍋／聚聚樓）➔ 捷運 1 站室內直通市府轉運站返宜',
+          transport: '館內用餐後，由國父紀念館站 5 號出口搭捷運 1 站（2分鐘）回市政府站 2 號出口，室內直通轉運站月台',
+          desc: '下雨天最適合在大巨蛋「湊湊火鍋・茶憩」邊吃頂級鍋物邊喝大紅袍珍奶（或誠品 3F 聚聚樓、B1 舞古賀鍋物），暖身後免撐傘直接進市府轉運站搭 19:50 首都客運 1571 回宜蘭。',
+          cost: '約 NT$1,800–2,200 ＋ 車資 NT$312',
+          tag: '【確鑿】全程室內立體連通 [3, 34, 40]'
+        }
+      ],
+      A_sunny: [
+        {
+          id: 'a1',
+          time: '08:40–10:00',
+          title: '宜蘭轉運站搭乘首都客運【1571】➔ 市府轉運站 ➔ 信義空橋至臺北101',
+          transport: '國道5號客運（60分鐘）＋ 2F 空橋漫步（12分鐘）',
+          desc: '全程控制在信義核心圈半徑 800 公尺內，去回程均為首都客運 1571 直達。',
+          cost: 'NT$272（客運全票 2 人）',
+          tag: '【確鑿】交通動線 [1, 5]'
+        },
+        {
+          id: 'a2',
+          time: '10:00–13:20',
+          title: '臺北101 88樓「天空興波」高空咖啡 ＋ 4樓「SALT & STONE」義式午餐',
+          transport: '辦公大樓 1F 報到上 88F ➔ 購物中心 4F 用餐',
+          desc: '上午於 88 樓俯瞰盆地景觀 90 分鐘，中午於 4 樓中庭花園餐廳享用披薩與寬帶麵。',
+          cost: '約 NT$2,300–3,150',
+          tag: '【確鑿】2026/07/01 入場新制 [13, 20, 22]'
+        },
+        {
+          id: 'a3',
+          time: '13:20–14:00',
+          title: '四四南村戶外草坡拍 101 同框照 ＆ 幾米月亮公車',
+          transport: '自 101 步行 3 分鐘（約 250 公尺）',
+          desc: '【注意】11/2（11月首個週一）四四南村 A/B/C/D 館與好丘信義店全面休館，僅能於戶外草坡停留拍照 20–30 分鐘。',
+          cost: 'NT$0',
+          tag: '【確鑿】首週一室內休館 [4, 26]'
+        },
+        {
+          id: 'a4',
+          time: '14:00–17:45',
+          title: 'BELLAVITA 寶麗廣塲 2F「Café Kitsuné」下午茶 ＆ 信義空橋夕陽漫步',
+          transport: '沿信義商圈 2F 空橋步行約 8–10 分鐘',
+          desc: '於歐式玻璃穹頂下品嚐小狐狸抹茶拿鐵與甜點；傍晚於新光三越 A11、A9 空橋欣賞信義區落日街景與櫥窗。',
+          cost: '約 NT$800（雙人下午茶）',
+          tag: '【確鑿】週一正常營業 [5, 51, 52]'
+        },
+        {
+          id: 'a5',
+          time: '18:00–20:56',
+          title: '晚餐：微風南山 7F「UMAMI 金色三麥」或信義安和「Woolloomooloo」➔ 1571 返宜',
+          transport: '步行 5 分鐘至微風南山（或搭捷運 1 站至信義安和站），20:00 於市府轉運站搭車返宜',
+          desc: '【排雷提醒】微風南山 48F「CÉ LA VI Taipei」週一公休，故改選 7F UMAMI 金色三麥或澳洲工業風餐酒館 Woolloomooloo 信義店（週一營業至 23:00）。',
+          cost: '約 NT$1,800–2,500 ＋ 客運 NT$272',
+          tag: '【確鑿】CÉ LA VI 週一公休 [3, 33, 53]'
+        }
+      ],
+      C_sunny: [
+        {
+          id: 'c1',
+          time: '08:40–12:15',
+          title: '宜蘭轉運站【1571】➔ 市府轉運站 ➔ 臺北101 高空咖啡體驗',
+          transport: '國道5號客運（60分鐘）＋ 空橋步行（12分鐘），於 101 辦公大樓 1F 報到上 88F',
+          desc: '上午於 101 88F 天空興波享受高空視野與輕食甜點，停留至 12:15 準備跨區前往永康商圈。',
+          cost: '客運 NT$272 ＋ 88F 約 NT$850–1,500',
+          tag: '【確鑿】去程客運最省時 [1, 20]'
+        },
+        {
+          id: 'c2',
+          time: '12:15–16:45',
+          title: '捷運紅線直達東門站 ➔ 永康街商圈午餐、文青玻璃屋午茶 ＆ 白水豆花',
+          transport: '由「台北101/世貿站」搭捷運淡水信義線 3 站（約 7 分鐘，免換線）至「東門站」5 號出口',
+          desc: '漫步永康街品嚐午餐與「白水豆花」（麥芽糖花生桃膠豆花）、「金雞母」甜品；午後於黑色玻璃屋森林系「永康天使 Angel cafe」（不限時）或日系老宅「羊毛與花‧永康」久坐聊天。（註：麻醉坊週一公休已排除）。',
+          cost: '捷運 NT$40 ＋ 午餐豆花午茶約 NT$1,500',
+          tag: '【確鑿】紅線3站直達、主力咖啡廳週一營業 [36, 48, 54]'
+        },
+        {
+          id: 'c3',
+          time: '16:45–19:00',
+          title: '東門站轉乘捷運至松山站 ➔ 饒河街觀光夜市必比登美食巡禮 ＆ 彩虹橋散步',
+          transport: '捷運東門站搭至松江南京站轉松山新店線（綠線）至「松山站」5 號出口（步行 2 分鐘即達夜市）',
+          desc: '17:15 趁第一波剛開攤免排隊，品嚐饒河街 249 號前「福州世祖胡椒餅」與米其林必比登「陳董藥燉排骨」（饒河街 160 號）；餐後可散步至緊鄰的彩虹橋基隆河濱吹風看夜景。',
+          cost: '捷運 NT$60 ＋ 夜市美食約 NT$650',
+          tag: '【確鑿】必比登名店週一營業 [10, 47, 49, 61]'
+        },
+        {
+          id: 'c4',
+          time: '19:12–20:24',
+          title: '臺鐵松山火車站 ➔ 搭乘對號自強號直達宜蘭火車站（西進東出不折返）',
+          transport: '由饒河夜市出口步行 2–3 分鐘（150公尺）直接進入共構之「臺鐵松山站」',
+          desc: '【最順路回程】完全不需折返信義區！首推搭乘暫定 19:12 發車之「250次 新自強號 EMU3000」（20:24 抵宜蘭）或 19:32「248次 太魯閣號」（20:36 抵宜蘭），或免預訂之 19:07「4046次 區間快車」。',
+          cost: 'NT$410（自強號 NT$205×2）',
+          tag: '【確鑿】松山站共構優勢與預售規則 [7, 8, 10]'
+        }
+      ]
+    };
+
+    // Monday Operation Radar Data
+    const radarData = [
+      {
+        name: '松山文創園區（古蹟花園／松菸風格店家／閱樂書店）',
+        area: '信義／松菸',
+        status: 'open',
+        badge: '正常營業 (安全)',
+        rule: '戶外 24H、室內走廊 08:00–22:00；東向製菸工廠 1F「松菸風格店家」週一 11:00–19:00 營業（僅除夕與每月最後一個週二休）。',
+        source: '【確鑿】松山文創園區官網 [37, 38]'
+      },
+      {
+        name: '誠品生活松菸（3F 24H書店／成真咖啡／eslite café／聚聚樓）',
+        area: '信義／松菸',
+        status: 'open',
+        badge: '正常營業 (安全)',
+        rule: '3F 書店 24 小時營業、商場 11:00–22:00、eslite café 10:00–24:00、成真咖啡 10:00–22:00、聚聚樓晚餐 17:30–21:00。',
+        source: '【確鑿】誠品生活與誠品行旅官網 [32, 39, 58]'
+      },
+      {
+        name: '臺北大巨蛋 遠東 Garden City（1F 潮美食公園／B2 花園綠廊）',
+        area: '信義／松菸',
+        status: 'open',
+        badge: '正常營業 (安全)',
+        rule: '商場週一 11:00–21:30，1F 餐酒館（PRESERVE、Lit Lit、紫木槿、湊湊火鍋）與 B2 地下街多數營業至 22:00 或午夜。',
+        source: '【確鑿】食尚玩家與遠東 Garden City 指南 [40, 41]'
+      },
+      {
+        name: '好丘 Good cho\'s 信義店（四四南村 C 館）',
+        area: '信義區',
+        status: 'closed',
+        badge: '公休地雷 (首週一陷阱)',
+        rule: '平時週一雖營業，但明文規定「每個月第一個星期一公休」！2026/11/02 恰為 11 月首個週一，切勿排入貝果午餐。',
+        source: '【確鑿】信義區公所與好丘營業資訊 [4, 26, 30]'
+      },
+      {
+        name: '四四南村 A 館（親子館）＆ B 館（眷村文物館）',
+        area: '信義區',
+        status: 'closed',
+        badge: '每週一休館 (地雷)',
+        rule: '室內展館每週一固定休館，週末簡單市集週一亦無擺攤；僅剩戶外草坡全天開放免費拍 101 同框照。',
+        source: '【確鑿】臺北市信義區公所公告 [4, 24, 27]'
+      },
+      {
+        name: '四四南村 D 館 ＆ 拾藝術選物店',
+        area: '信義區',
+        status: 'closed',
+        badge: '公休地雷 (首週一陷阱)',
+        rule: '與好丘相同，固定於「每個月第一個星期一」休館。',
+        source: '【確鑿】臺北市信義區公所公告 [4, 25]'
+      },
+      {
+        name: '台灣設計館（松山文創園區內）',
+        area: '信義／松菸',
+        status: 'closed',
+        badge: '每週一休館 (地雷)',
+        rule: '開放時間為週二至週日 10:00–18:00，每週一固定休館（逛松菸時請鎖定東向製菸工廠 1F 松菸風格店家）。',
+        source: '【確鑿】園區展覽資訊 [31]'
+      },
+      {
+        name: '台北偶戲館（松菸旁）',
+        area: '松山區',
+        status: 'closed',
+        badge: '每週一休館 (地雷)',
+        rule: '週二至週日 10:00–17:00 開放，每週一固定休館。',
+        source: '【確鑿】場館營業資訊 [31]'
+      },
+      {
+        name: '誠品畫廊（誠品生活松菸 B1）',
+        area: '信義／松菸',
+        status: 'closed',
+        badge: '週日、週一公休',
+        rule: '畫廊空間週日與週一公休（惟同棟誠品生活商場、24H 書店與餐廳均正常營業）。',
+        source: '【確鑿】誠品生活松菸服務資訊 [32]'
+      },
+      {
+        name: 'CÉ LA VI Taipei（微風南山 48F 高空餐酒館）',
+        area: '信義區',
+        status: 'closed',
+        badge: '每週一公休 (地雷)',
+        rule: '餐廳與高空酒吧均為每週一固定公休，安排信義區晚餐或看夜景切勿選此處（可改選 7F UMAMI 金色三麥）。',
+        source: '【確鑿】信義區高空餐廳營業查核 [33]'
+      },
+      {
+        name: 'In Between 之間（誠品行旅 2F 景觀牛排館）',
+        area: '信義／松菸',
+        status: 'closed',
+        badge: '每週一公休 (地雷)',
+        rule: '週二至週日營業，週一固定公休（同棟誠品行旅 1F The Chapter 與 The Lounge 則週一正常營業）。',
+        source: '【確鑿】誠品松菸餐飲指南 [34]'
+      },
+      {
+        name: 'Tropo Coffee ／ OZ Cafe ／ 麻醉坊（永康商圈）',
+        area: '松菸／永康',
+        status: 'closed',
+        badge: '每週一公休 (地雷)',
+        rule: '均為週一固定公休之獨立名店；去松菸請改選成真咖啡／豆留文青，去永康街請改選永康天使／羊毛與花。',
+        source: '【確鑿】信義與永康咖啡廳查核 [35, 36]'
+      }
+    ];
+
+    // 12 Navigation Nodes Data
+    const navNodes = [
+      { name: '1. 宜蘭轉運站（首都客運1571）', addr: '宜蘭縣宜蘭市校舍路190號', url: 'https://www.google.com/maps/search/?api=1&query=%E5%AE%9C%E8%98%AD%E8%BD%89%E9%81%8B%E7%AB%99+%E5%AE%9C%E8%98%AD%E7%B8%A3%E5%AE%9C%E8%98%AD%E5%B8%82%E6%A0%A1%E8%88%8D%E8%B7%AF190%E8%99%9F' },
+      { name: '2. 市府轉運站（信義區單一樞紐）', addr: '臺北市信義區忠孝東路五段6號', url: 'https://www.google.com/maps/search/?api=1&query=%E5%B8%82%E5%BA%9C%E8%BD%89%E9%81%8B%E7%AB%99+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80' },
+      { name: '3. 臺北101辦公大樓1樓（88F/觀景台新入口）', addr: '臺北市信義區信義路五段7號1樓', url: 'https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E5%8C%97101%E8%BE%A6%E5%85%AC%E5%A4%A7%E6%A8%93+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E4%BF%A1%E7%BE%A9%E8%B7%AF%E4%BA%94%E6%AE%B57%E8%99%9F' },
+      { name: '4. SALT & STONE 台北101店（4F午餐）', addr: '臺北市信義區市府路45號4樓', url: 'https://www.google.com/maps/search/?api=1&query=SALT+AND+STONE+%E5%8F%B0%E5%8C%97101+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E5%B8%82%E5%BA%9C%E8%B7%AF45%E8%99%9F4%E6%A8%93' },
+      { name: '5. 四四南村（戶外草坡拍101全景）', addr: '臺北市信義區松勤街50號', url: 'https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E5%9B%9B%E5%8D%97%E6%9D%91+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E6%9D%BE%E5%8B%A4%E8%A1%9750%E8%99%9F' },
+      { name: '6. BELLAVITA 寶麗廣塲（Café Kitsuné 2F）', addr: '臺北市信義區松仁路28號2樓', url: 'https://www.google.com/maps/search/?api=1&query=Cafe+Kitsune+BELLAVITA+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E6%9D%BE%E4%BB%81%E8%B7%AF28%E8%99%9F' },
+      { name: '7. 松山文創園區（松菸風格店家／巴洛克花園）', addr: '臺北市信義區光復南路133號', url: 'https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E5%B1%B1%E6%96%87%E5%89%B5%E5%9C%92%E5%8D%80+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E5%85%89%E5%BE%A9%E5%8D%97%E8%B7%AF133%E8%99%9F' },
+      { name: '8. 誠品生活松菸（24H書店／成真B1／聚聚樓3F）', addr: '臺北市信義區菸廠路88號', url: 'https://www.google.com/maps/search/?api=1&query=%E8%AA%A0%E5%93%81%E7%94%9F%E6%B4%BB%E6%9D%BE%E8%8F%B8%E5%BA%97+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E8%8F%B8%E5%BB%A0%E8%B7%AF88%E8%99%9F' },
+      { name: '9. 臺北大巨蛋 遠東Garden City（潮美食公園）', addr: '臺北市信義區忠孝東路四段515號', url: 'https://www.google.com/maps/search/?api=1&query=%E9%81%A0%E6%9D%B1Garden+City+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E5%BF%A0%E5%AD%9D%E6%9D%B1%E8%B7%AF%E5%9B%9B%E6%AE%B5515%E8%99%9F' },
+      { name: '10. Papàroy 義式手作料理（松菸巷弄晚餐）', addr: '臺北市信義區忠孝東路四段553巷16號', url: 'https://www.google.com/maps/search/?api=1&query=Paparoy+%E5%8F%B0%E5%8C%97%E5%B8%82%E4%BF%A1%E7%BE%A9%E5%8D%80%E5%BF%A0%E5%AD%9D%E6%9D%B1%E8%B7%AF%E5%9B%9B%E6%AE%B5553%E5%B7%B716%E8%99%9F' },
+      { name: '11. 永康街商圈（永康天使 Angel cafe）', addr: '臺北市大安區永康街18號', url: 'https://www.google.com/maps/search/?api=1&query=%E6%B0%B8%E5%BA%B7%E5%A4%A9%E4%BD%BF+Angel+cafe+%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E6%B0%B8%E5%BA%B7%E8%A1%9718%E8%99%9F' },
+      { name: '12. 饒河街觀光夜市（捷運松山站5號出口）', addr: '臺北市松山區饒河街249號', url: 'https://www.google.com/maps/search/?api=1&query=%E9%A5%92%E6%B2%B3%E8%A1%97%E8%A7%80%E5%85%89%E5%A4%9C%E5%B8%82+%E5%8F%B0%E5%8C%97%E5%B8%82%E6%9D%BE%E5%B1%B1%E5%8D%80%E9%A5%92%E6%B2%B3%E8%A1%97249%E8%99%9F' }
+    ];
+
+    // Switch Top Navigation Sections
+    function switchSection(secId) {
+      const sections = ['sec-routes', 'sec-101', 'sec-radar', 'sec-budget', 'sec-transport'];
+      sections.forEach(id => {
+        document.getElementById(id).classList.toggle('hidden', id !== secId);
+        const btn = document.getElementById('tab-' + id);
+        if (id === secId) {
+          btn.className = 'tab-btn px-4 py-2 rounded-md text-sm font-semibold bg-slate-900 text-white whitespace-nowrap';
+        } else {
+          btn.className = 'tab-btn px-4 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 whitespace-nowrap';
+        }
+      });
+    }
+
+    // Route & Weather Controller
+    function selectRoute(route) {
+      currentRoute = route;
+      ['A', 'B', 'C'].forEach(r => {
+        const card = document.getElementById('card-route-' + r);
+        if (r === route) {
+          card.className = 'cursor-pointer border-2 border-teal-600 bg-teal-50/40 rounded-lg p-4 transition';
+        } else {
+          card.className = 'cursor-pointer border border-slate-200 hover:border-slate-300 bg-white rounded-lg p-4 transition';
+        }
+      });
+      document.getElementById('elastic-controls').classList.toggle('hidden', !(currentRoute === 'B' && currentWeather === 'sunny'));
+      renderTimeline();
+    }
+
+    function setWeatherMode(mode) {
+      currentWeather = mode;
+      const btnSunny = document.getElementById('btn-weather-sunny');
+      const btnRainy = document.getElementById('btn-weather-rainy');
+      if (mode === 'sunny') {
+        btnSunny.className = 'px-3 py-1.5 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-xs';
+        btnRainy.className = 'px-3 py-1.5 rounded-md text-xs font-medium text-slate-600 hover:text-slate-900';
+      } else {
+        btnRainy.className = 'px-3 py-1.5 rounded-md text-xs font-semibold bg-teal-700 text-white shadow-xs';
+        btnSunny.className = 'px-3 py-1.5 rounded-md text-xs font-medium text-slate-600 hover:text-slate-900';
+      }
+      document.getElementById('elastic-controls').classList.toggle('hidden', !(currentRoute === 'B' && currentWeather === 'sunny'));
+      renderTimeline();
+    }
+
+    function renderTimeline() {
+      const container = document.getElementById('timeline-container');
+      const titleEl = document.getElementById('timeline-title');
+      const statsEl = document.getElementById('timeline-stats');
+      let items = [];
+
+      if (currentWeather === 'rainy') {
+        items = timelineData.B_rainy;
+        titleEl.textContent = '東北季風雨天備案：100% 室內立體空橋與地下通廊無縫動線';
+        statsEl.textContent = '淋雨風險：0 公尺（全程室內空橋／捷運地下通廊連通）';
+      } else if (currentRoute === 'B') {
+        const skip44 = document.getElementById('chk-skip-44').checked;
+        const lightTea = document.getElementById('chk-light-tea').checked;
+        items = timelineData.B_sunny.filter(item => {
+          if (skip44 && item.id === 'b6_44') return false;
+          return true;
+        }).map(item => {
+          if (lightTea && item.id === 'b9_tea') {
+            return {
+              ...item,
+              title: '午後書香漫遊：誠品松菸 3F 24H 書店 ＆ eslite café 單點飲品（胃口優化版）',
+              desc: '因上午於 88F 天空興波已享用多道甜點，午後刪減正式舒芙蕾餐廳，改在生態池畔「閱樂書店」與「誠品 3F 24H 書店」輕鬆看書逛黑膠館，單點兩杯飲品小憩，把胃口留給 18:00 晚餐。',
+              cost: '約 NT$400（單點兩杯飲品，省下約 NT$400）'
+            };
+          }
+          return item;
+        });
+        titleEl.textContent = '方案 B：文青質感約會路線（★最推薦・週一 100% 完整營業）';
+        statsEl.textContent = skip44 ? '預估步行：約 2.3 km (30–35 分鐘，已略過四四南村戶外)' : '預估步行：約 2.6 km (35–45 分鐘，平地木棧道與室內)';
+      } else if (currentRoute === 'A') {
+        items = timelineData.A_sunny;
+        titleEl.textContent = '方案 A：信義區輕鬆浪漫路線（注意：11/02 四四南村室內館全休）';
+        statsEl.textContent = '預估步行：約 2.2 km (30–35 分鐘，多為室內與二樓空橋)';
+      } else {
+        items = timelineData.C_sunny;
+        titleEl.textContent = '方案 C：城市探索與夜間約會路線（101 ➔ 永康街 ➔ 饒河夜市 ➔ 松山站火車返宜）';
+        statsEl.textContent = '預估步行：約 4.2 km (60–75 分鐘，含街區與 600m 夜市慢逛)';
+      }
+
+      container.innerHTML = items.map((step, idx) => `
+        <div class="relative pl-8">
+          <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-teal-700 text-white text-xs font-bold flex items-center justify-center ring-4 ring-white">
+            ${idx + 1}
+          </div>
+          <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 hover:border-slate-300 transition">
+            <div class="flex flex-wrap justify-between items-center gap-2 mb-1.5">
+              <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2 py-0.5 rounded">${step.time}</span>
+              <span class="text-[11px] font-medium text-slate-500">${step.tag}</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">${step.title}</h4>
+            <div class="text-xs text-slate-600 mt-1 font-medium">交通與移動：${step.transport}</div>
+            <p class="text-xs sm:text-sm text-slate-700 mt-2 leading-relaxed">${step.desc}</p>
+            <div class="mt-2.5 pt-2 border-t border-slate-200/70 flex justify-between items-center text-xs">
+              <span class="text-slate-500">預估雙人花費：</span>
+              <span class="font-bold text-slate-800">${step.cost}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Render Monday Radar
+    function filterRadar(filterType) {
+      ['all', 'open', 'closed'].forEach(t => {
+        const btn = document.getElementById('radar-btn-' + t);
+        if (t === filterType) {
+          btn.className = 'px-3 py-1.5 rounded text-xs font-semibold bg-white text-slate-900 shadow-xs';
+        } else {
+          btn.className = 'px-3 py-1.5 rounded text-xs font-medium text-slate-600 hover:bg-white';
+        }
+      });
+
+      const grid = document.getElementById('radar-grid');
+      const filtered = radarData.filter(d => filterType === 'all' || d.status === filterType);
+      grid.innerHTML = filtered.map(item => {
+        const isOpen = item.status === 'open';
+        return `
+          <div class="border ${isOpen ? 'border-emerald-300 bg-emerald-50/30' : 'border-rose-200 bg-rose-50/30'} rounded-lg p-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center gap-2 mb-2">
+                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">${item.area}</span>
+                <span class="text-xs font-bold px-2 py-0.5 rounded ${isOpen ? 'bg-emerald-700 text-white' : 'bg-rose-700 text-white'}">${item.badge}</span>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm">${item.name}</h4>
+              <p class="text-xs text-slate-700 mt-2 leading-relaxed">${item.rule}</p>
+            </div>
+            <div class="mt-3 pt-2 border-t border-slate-200/60 text-[11px] text-slate-500">
+              ${item.source}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Budget Calculator Logic
+    function applyBudgetPreset(preset) {
+      const sTrans = document.getElementById('sel-transport');
+      const s101 = document.getElementById('sel-101');
+      const sLunch = document.getElementById('sel-lunch');
+      const sTea = document.getElementById('sel-tea');
+      const sDinner = document.getElementById('sel-dinner');
+      const rSouv = document.getElementById('rng-souvenir');
+
+      if (preset === 'budget') {
+        sTrans.value = '604';
+        s101.value = '600';
+        sLunch.value = '550';
+        sTea.value = '420';
+        sDinner.value = '700';
+        rSouv.value = '300';
+      } else if (preset === 'smart') {
+        sTrans.value = '694';
+        s101.value = '850';
+        sLunch.value = '1450';
+        sTea.value = '0';
+        sDinner.value = '1200';
+        rSouv.value = '100';
+      } else if (preset === 'standard') {
+        sTrans.value = '694';
+        s101.value = '1500';
+        sLunch.value = '1450';
+        sTea.value = '750';
+        sDinner.value = '1400';
+        rSouv.value = '400';
+      } else if (preset === 'luxury') {
+        sTrans.value = '794';
+        s101.value = '2000';
+        sLunch.value = '2640';
+        sTea.value = '950';
+        sDinner.value = '2200';
+        rSouv.value = '800';
+      }
+      calculateBudget();
+    }
+
+    function calculateBudget() {
+      const vTrans = parseInt(document.getElementById('sel-transport').value, 10);
+      const v101 = parseInt(document.getElementById('sel-101').value, 10);
+      const vLunch = parseInt(document.getElementById('sel-lunch').value, 10);
+      const vTea = parseInt(document.getElementById('sel-tea').value, 10);
+      const vDinner = parseInt(document.getElementById('sel-dinner').value, 10);
+      const vSouv = parseInt(document.getElementById('rng-souvenir').value, 10);
+
+      document.getElementById('val-souvenir').textContent = 'NT$ ' + vSouv.toLocaleString();
+
+      const total = vTrans + v101 + vLunch + vTea + vDinner + vSouv;
+      const perPerson = Math.round(total / 2);
+
+      document.getElementById('budget-total-display').textContent = 'NT$ ' + total.toLocaleString();
+      document.getElementById('budget-per-person').textContent = 'NT$ ' + perPerson.toLocaleString();
+
+      const badge = document.getElementById('budget-tier-badge');
+      if (total <= 3800) {
+        badge.textContent = '平價輕巧級距';
+        badge.className = 'bg-slate-600 text-white px-2 py-0.5 rounded text-[11px] font-bold';
+      } else if (total <= 5000) {
+        badge.textContent = '精準優化級距';
+        badge.className = 'bg-emerald-600 text-white px-2 py-0.5 rounded text-[11px] font-bold';
+      } else if (total <= 7500) {
+        badge.textContent = '中等質感推薦';
+        badge.className = 'bg-teal-600 text-white px-2 py-0.5 rounded text-[11px] font-bold';
+      } else {
+        badge.textContent = '稍精緻寵愛級距';
+        badge.className = 'bg-indigo-600 text-white px-2 py-0.5 rounded text-[11px] font-bold';
+      }
+
+      // Render Stacked Bar
+      const segments = [
+        { label: '交通', val: vTrans, color: 'bg-slate-600' },
+        { label: '101高空', val: v101, color: 'bg-teal-600' },
+        { label: '午餐', val: vLunch, color: 'bg-amber-500' },
+        { label: '午茶', val: vTea, color: 'bg-emerald-500' },
+        { label: '晚餐', val: vDinner, color: 'bg-indigo-600' },
+        { label: '伴手禮', val: vSouv, color: 'bg-rose-500' }
+      ];
+
+      const barEl = document.getElementById('budget-stacked-bar');
+      barEl.innerHTML = segments.map(s => {
+        const pct = total > 0 ? ((s.val / total) * 100).toFixed(1) : 0;
+        return `<div class="${s.color} h-full transition-all duration-300" style="width: ${pct}%" title="${s.label}: NT$${s.val} (${pct}%)"></div>`;
+      }).join('');
+
+      document.getElementById('budget-bar-labels').textContent =
+        segments.map(s => `${s.label} NT$${s.val}`).join(' ｜ ');
+    }
+
+    // Render Navigation Links
+    function renderNavLinks() {
+      const grid = document.getElementById('nav-links-grid');
+      grid.innerHTML = navNodes.map(n => `
+        <div class="border border-slate-200 rounded-lg p-3.5 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <div class="font-bold text-slate-900 text-xs sm:text-sm">${n.name}</div>
+            <div class="text-xs text-slate-500 mt-1">${n.addr}</div>
+          </div>
+          <div class="mt-3 pt-2 border-t border-slate-200 flex justify-end">
+            <a href="${n.url}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-teal-700 hover:text-teal-900 underline">
+              開啟外部地圖搜尋 ➔
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Checklist LocalStorage Persistence
+    function saveChecklist() {
+      const checks = {};
+      document.querySelectorAll('#booking-checklist input[type="checkbox"]').forEach(el => {
+        checks[el.getAttribute('data-check-id')] = el.checked;
+      });
+      try {
+        localStorage.setItem('tp101_couple_trip_20261102', JSON.stringify(checks));
+      } catch (e) {}
+    }
+
+    function loadChecklist() {
+      try {
+        const saved = JSON.parse(localStorage.getItem('tp101_couple_trip_20261102') || '{}');
+        document.querySelectorAll('#booking-checklist input[type="checkbox"]').forEach(el => {
+          const id = el.getAttribute('data-check-id');
+          if (saved[id]) el.checked = true;
+        });
+      } catch (e) {}
+    }
+
+    // Initialize App on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderTimeline();
+      filterRadar('all');
+      calculateBudget();
+      renderNavLinks();
+      loadChecklist();
+    });
+  </script>
+</body>
+</html>
